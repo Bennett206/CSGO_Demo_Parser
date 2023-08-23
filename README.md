@@ -6,3 +6,8 @@
 - The result will be a directory `ParsedReplays` that houses the .json file(s).
 - From there you will be able to use that data in whatever way you choose.
   
+## Features:
+- Creates the `ParsedReplays` directory if it doesn't exist within the script directory.
+- Ignores all file extensions except for `.dem`.
+- Will only parse demos that have not been parsed yet (ones that aren't found in the `ParsedReplays` directory.
+
