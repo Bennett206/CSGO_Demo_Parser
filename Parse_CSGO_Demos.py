@@ -18,7 +18,8 @@ try:
     demo_list = [file_name for file_name in os.listdir(
         replay_directory) if file_name.endswith(demo_extension)]
     # make the directory where the .json files will go
-    os.makedirs(parsed_directory)
+    if not os.path.exists(parsed_directory):
+        os.makedirs(parsed_directory)
 
     if demo_list:
         for demo_file in demo_list:
